@@ -1,0 +1,7 @@
+function lift(){$(".head-text").addClass("lift-text")}$("#typed").typed({strings:["Protect Your Privacy And Identity.","Unblock Porn sit..","Unblock Censorship Filters.","Freedom!!!"],typeSpeed:30,callback:function(){lift()}});var forEach=function(t,e,n){for(var o=0;o<t.length;o++)e.call(n,o,t[o])},randomIntFromInterval=function(t,e){return Math.floor(Math.random()*(e-t+1)+t)},$mapPins=document.querySelectorAll("#Map-shape g");forEach($mapPins,function(t,e){e.groupTimeline=new TimelineMax({paused:!0}),e.groupTimeline.to(e,.25,{opacity:0}),new TimelineMax({repeat:-1,delay:randomIntFromInterval(1,3),repeatDelay:randomIntFromInterval(0,1)}).to(e.querySelector(".Pin-back"),3,{scale:50,transformOrigin:"center center",opacity:0})}),$(function(){"use strict";$('[data-toggle="offcanvas"]').on("click",function(){$(".offcanvas-collapse").toggleClass("open")})}),$(function(){$('[data-toggle="tooltip"]').tooltip()}),$(function(){$(".loding").hide(),$("#report").hide();var t=$("#submit_form").attr("action");$(".subb").click(function(e){e.preventDefault(),$.ajax({type:"post",url:t,data:$("#submit_form").serialize(),beforeSend:function(){$(".loding").show()},success:function(t){$("#report").show(),$("#report").html(t),$(".loding").hide()}})})});
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LcA8IEUAAAAAFvV7NaTvv5xlPjlh3KRn4UKchaY', {action:'validate_captcha'})
+                  .then(function(token) {
+            document.getElementById('g-recaptcha-response').value = token;
+        });
+    });
